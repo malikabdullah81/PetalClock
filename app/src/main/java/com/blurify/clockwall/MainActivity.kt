@@ -95,7 +95,7 @@ class MainActivity : Activity() {
                 })
             }, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT))
         }
-        slider("Lens height", "offsetY", 0, -80, 80) { if (it == 0) "default" else if (it < 0) "${-it} up" else "$it down" }
-        slider("Lens size", "size", 100, 60, 150) { "$it%" }
+        slider("Lens height", "offsetY", 0, -300, 300) { if (it == 0) "default" else if (it < 0) "${-it} up" else "$it down" }
+        slider("Lens size", "size", 100, 60, 250) { "$it%" }
     }
 }
